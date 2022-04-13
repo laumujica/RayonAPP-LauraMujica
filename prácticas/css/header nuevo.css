@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+.header {
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    max-width: 1100px;
+    height: 100px;
+    margin: auto;
+}
+
+.nav img {
+    width: 200px;
+    height: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+    transition: all .5s ease;
+}
+
+.nav ul li a:hover {
+    color: blue;
+    background-color: bisque;
+}
+
+
+
+
+
