@@ -1061,6 +1061,12 @@ details .faq_text p {
     color: var(--hover-color1);
 }
 
+.contact-info .font-size h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
 /* MEDIA QUERY */
 @media (max-width: 425px) {
     details {
