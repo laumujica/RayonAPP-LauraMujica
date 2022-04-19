@@ -1,4 +1,4 @@
-   /* ACLARACIÓN SOBRE BORDES OCULTOS
+/* ACLARACIÓN SOBRE BORDES OCULTOS
         Lo hice así para ponerle rectángulos a las cosas y poder darme cuenta de qué tengo que hacer con cada uno. Antes de la entrega final los quitaré a todos.  */
 
 * {
@@ -137,7 +137,8 @@ body {
 .selected {
     padding: 8px;
     background-color: var(--primary-color);
-    border-radius: 0.5em;    ;
+    border-radius: 0.5em;
+    ;
 }
 
 .selected a:visited {
@@ -176,7 +177,8 @@ main-btn (main-btn--a) */
 
 /* Animación para que flote el mockup */
 @keyframes float {
-    50% {transform: translateY(-20px);
+    50% {
+        transform: translateY(-20px);
     }
 }
 
@@ -196,7 +198,7 @@ main-btn (main-btn--a) */
     font-style: italic;
 }
 
-.main-text .main-features{
+.main-text .main-features {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -236,7 +238,7 @@ footer {
 footer .copy {
     display: flex;
     flex-direction: column;
-    padding: 15px;    
+    padding: 15px;
 }
 
 .copy p {
@@ -266,7 +268,7 @@ footer .copy {
 }
 
 /* * MEDIA QUERY * */
-@media (min-width: 1025px) and (max-width: 1439px){
+@media (min-width: 1025px) and (max-width: 1439px) {
     header {
         justify-content: center;
         align-items: center;
@@ -280,15 +282,16 @@ footer .copy {
 
     .nav ul li {
         text-align: center;
-        
+
     }
 
-    .nav--menuList ul li a{
+    .nav--menuList ul li a {
         font-size: 0.8em;
     }
 }
 
 @media (min-width: 765px) and (max-width: 1024px) {
+
     /* HEADER */
     header {
         justify-content: center;
@@ -310,7 +313,7 @@ footer .copy {
         text-align: center;
     }
 
-    .nav ul li a{
+    .nav ul li a {
         font-size: 13px;
         color: var(--primary-color);
         padding: 0.3em;
@@ -384,7 +387,7 @@ footer .copy {
         text-align: center;
     }
 
-    .nav ul li a{
+    .nav ul li a {
         font-size: 13px;
         color: var(--primary-color);
         padding: 0.7em;
@@ -399,7 +402,7 @@ footer .copy {
     .mockup .mockup--floating {
         width: 100%;
     }
-    
+
     .icons .icons-size svg {
         width: 30px;
         height: 30px;
@@ -409,28 +412,29 @@ footer .copy {
         font-size: 1.5em;
         margin-top: 10px;
     }
-    
+
     .main-text .main-description {
         margin-top: 30px;
         font-size: 14px;
         font-style: italic;
     }
-    
-    .main-text .main-features li{
+
+    .main-text .main-features li {
         font-size: 14px;
     }
 }
 
 @media (max-width: 600px) {
-/* HEADER */
+
+    /* HEADER */
     .header {
-        display: flex; 
-        flex-direction: column;       
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 300px;
         font-size: 15px;
         position: static;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0,5);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0, 5);
     }
 
     .selector-cerrar .material-icons-outlined {
@@ -447,6 +451,7 @@ footer .copy {
     .header--logo .logo--enlace img {
         max-width: 15em;
     }
+
     .nav {
         background-color: #fff;
         display: flex;
@@ -471,7 +476,7 @@ footer .copy {
         display: none;
     }
 
-    
+
     /* MAIN> */
     .main {
         display: flex;
@@ -484,12 +489,12 @@ footer .copy {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .mockup .mockup--floating {
         display: flex;
         width: 70%;
     }
-    
+
     .main-btn .btn-descargar {
         display: flex;
         flex-direction: row;
@@ -532,7 +537,7 @@ footer .copy {
 
     footer .copy {
         align-items: center;
-        padding: 10px;    
+        padding: 10px;
     }
 
     .copy p {
@@ -550,7 +555,7 @@ footer .copy {
         font-size: 0.6rem;
         padding: 3px 3px;
     }
-    
+
     .icons .icons-size svg {
         width: 30px;
         height: 30px;
@@ -562,7 +567,7 @@ footer .copy {
     header {
         height: auto;
     }
-    
+
     .header-fluid {
         padding: 0;
     }
@@ -581,6 +586,7 @@ footer .copy {
         padding: 0;
     }
 }
+
 /* fin de página: home.html */
 
 
@@ -619,7 +625,8 @@ footer .copy {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -627,15 +634,15 @@ footer .copy {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
@@ -672,7 +679,7 @@ footer .copy {
     font-weight: bold;
     text-align: center;
     font: 20px;
-    
+
 }
 
 .price-table-container .table .price {
@@ -766,11 +773,11 @@ footer .copy {
 
 
 /* MEDIA QUERY */
-@media  (min-width: 320px) and (max-width: 724px) {
+@media (min-width: 320px) and (max-width: 724px) {
     .contact-info {
         margin: 10px;
     }
-    
+
     .contact-info h2 {
         font-size: 25px;
     }
@@ -784,12 +791,14 @@ footer .copy {
         height: auto;
     }
 
-    .table .price{
+    .table .price {
         border: none;
     }
+
     .table .features {
         border: none;
     }
+
     .table .actions {
         border: none;
     }
@@ -799,7 +808,7 @@ footer .copy {
         margin: 40px auto;
         width: auto;
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
 
@@ -811,23 +820,25 @@ footer .copy {
         padding: 10px 10px;
         margin: 10px;
     }
-    
+
     .price-table-container .table:first-child {
         border-radius: 10px;
     }
-    
+
     .price-table-container .table:last-child {
         border-radius: 10px;
     }
 }
 
 @media (min-width:725px) and (max-width: 1024px) {
-    .table .price{
+    .table .price {
         border: none;
     }
+
     .table .features {
         border: none;
     }
+
     .table .actions {
         border: none;
     }
@@ -835,7 +846,7 @@ footer .copy {
     .price-table-container {
         width: 700px;
     }
-    
+
     .price-table-container .table {
         padding: 10px;
     }
@@ -853,12 +864,13 @@ footer .copy {
         border-radius: 10px;
         z-index: 200;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }   
+    }
 
     .price-table-container .table .features ul li {
         margin-bottom: 5px;
     }
 }
+
 /* fin de página: sobre-la-app.html */
 
 
@@ -901,7 +913,7 @@ footer .copy {
 .blog-post {
     background-color: #fff;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
-    overflow: cover;    
+    overflow: cover;
 }
 
 .blog-post .thumbnail {
@@ -943,14 +955,14 @@ footer .copy {
 
 .blog-content a {
     text-decoration: underline;
-    color: var(--hover-color1) ;
+    color: var(--hover-color1);
 }
 
 .blog-content a:hover {
     color: var(--highlight-color);
 }
 
-.container .item-bcg{
+.container .item-bcg {
     background-color: var(--highlight-color);
 }
 
@@ -961,7 +973,7 @@ footer .copy {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1025px) and (max-width: 1440px) {
     .entradas {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -973,7 +985,7 @@ footer .copy {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
     .entradas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -995,7 +1007,7 @@ footer .copy {
         align-items: center;
         text-align: center;
     }
-    
+
     .titular_info h1 {
         font-size: 50px;
         color: #fff;
@@ -1005,22 +1017,22 @@ footer .copy {
         font-size: 13px;
         width: 350px;
         margin-bottom: 10px;
-    /*     border: 2px solid var(--primary-color); */
+        /*     border: 2px solid var(--primary-color); */
     }
-    
+
     .entradas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem 3rem;
-    gap: 1rem;
-    justify-content: center;
-    align-content: center;
-    height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 3rem;
+        gap: 1rem;
+        justify-content: center;
+        align-content: center;
+        height: auto;
     }
 
     .blog-post:nth-child(1) {
-    grid-column: 1/3;
-    grid-row: 1/2;
+        grid-column: 1/3;
+        grid-row: 1/2;
     }
 }
 
@@ -1034,19 +1046,19 @@ footer .copy {
         align-items: center;
         text-align: center;
     }
-    
+
     .titular_info h1 {
         font-size: 30px;
         color: #fff;
     }
-    
+
     .titular_info p {
         font-size: 13px;
         width: 200px;
         margin-bottom: 10px;
-    /*     border: 2px solid var(--primary-color); */
+        /*     border: 2px solid var(--primary-color); */
     }
-    
+
     .entradas {
         display: grid;
         grid-template-columns: 1fr;
@@ -1060,9 +1072,10 @@ footer .copy {
     .blog-post:nth-child(1) {
         grid-column: 1/1;
         grid-row: 1/1;
-    }   
+    }
 
 }
+
 /* fin de página: blog.html */
 
 
@@ -1108,7 +1121,7 @@ details[open] summary::before {
     content: '-';
 }
 
-.faq_list ul li { 
+.faq_list ul li {
     margin-left: 50px;
     padding: 3px;
     color: var(--hover-color1);
@@ -1131,31 +1144,37 @@ details .faq_text p {
         max-width: 300px;
     }
 }
+
 @media (min-width: 426px) {
     details {
         width: 400px;
     }
 }
+
 @media (min-width: 768px) {
     details {
         width: 700px;
     }
 }
+
 @media (min-width: 1024px) {
     details {
         width: 1000px;
     }
 }
+
 @media (min-width: 1024px) {
     details {
         width: 700px;
     }
 }
+
 @media (min-width: 1444px) {
     details {
         width: 1300px;
     }
 }
+
 /* fin de FAQ.html */
 
 
@@ -1171,14 +1190,16 @@ details .faq_text p {
 
 
 /* MEDIA QUERY */
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 320px) and (max-width: 425px) {
     form {
         margin: 20px auto;
         max-width: 300px;
     }
+
     .contact-info {
         margin: 20px;
     }
+
     .form-item_desplegable {
         width: 180px;
     }
@@ -1197,10 +1218,12 @@ details .faq_text p {
         margin-right: 100px;
     }
 }
+
 @media (min-width: 1024px) {
     .form-width {
         margin-left: 350px;
         margin-right: 350px;
     }
 }
+
 /* fin de página: contacto.html */
