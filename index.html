@@ -28,9 +28,9 @@
 <body>
 
     <!-- HEADER -->
-    <div class="container-fluid header-fluid">
-        <div class="header">
-            <div class="nav nav-720">
+    <div class="container-fluid position-sticky fixed-top header-fluid">
+        <div class="header ">
+            <div class="nav">
                 <a href="./index.html" class="logo--enlace">
                     <img src="./img/logo-rayon.png" alt="RayonAPP logo"></a>
                 <ul class="nav-ul">
@@ -51,35 +51,46 @@
     </div>
 
 
+
+
     <!-- MAIN -->
 
     <div class="container">
         <div class="main row justify-content-center">
-            <div class="mockup animate__animated animate__zoomIn">
-                <img src="./img/Mockup/mockup-transp.png" alt="RayonAPP" class="mockup--floating">
+            <div class="col">
+                <section class="main-text">
+                    <h1 class="fw-bolder">Date un empujoncito <span class="into-zone">INTO THE ZONE</span> para entrar
+                        de
+                        lleno en esa hoja en blanco.
+                    </h1>
+                    <p class="main-description">El bloqueo creativo es un problema al que se enfrentan todos los
+                        artistas,
+                        ilustradores, escritores, diseñadores... La hoja en blanco nos intimida y nos frena, por eso es
+                        importante perderle el miedo y no dejar de practicar para sacar nuestros proyectos creativos
+                        adelante.
+                    </p>
+
+                    <ul class="main-features">
+                        <li>Ejercicios de concentración</li>
+                        <li>Dinámicas de juego</li>
+                        <li>Botones 'ramdom' por doquier</li>
+                    </ul>
+                </section>
             </div>
 
-            <section class="main-text">
-                <h1 class="fw-bolder">Date un empujoncito <span class="into-zone">INTO THE ZONE</span> para entrar de
-                    lleno en esa hoja en blanco.
-                </h1>
-                <p class="main-description">El bloqueo creativo es un problema al que se enfrentan todos los artistas,
-                    ilustradores, escritores, diseñadores... La hoja en blanco nos intimida y nos frena, por eso es
-                    importante perderle el miedo y no dejar de practicar para sacar nuestros proyectos creativos
-                    adelante.
-                </p>
+            <div class="col col-shadow">
+                <div class="mockup animate__animated animate__zoomIn">
+                    <img src="./img/Mockup/mockup-transp.png" alt="RayonAPP" class="mockup--floating">
+                </div>
 
-                <ul class="main-features">
-                    <!-- no logré cambiarle los íconos en CSS -->
-                    <li>Ejercicios de concentración</li>
-                    <li>Dinámicas de juego</li>
-                    <li>Botones 'ramdom' por doquier</li>
-                </ul>
-            </section>
+                <div class="container">
+                    <div class="oval-shadow"></div>
+                </div>
+            </div>
 
-            <div class="container new-btn">
+            <div class="container">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning font-family btn-align p-3" data-bs-toggle="modal"
+                <button type="button" class="btn btn-warning font-family p-3 new-btn" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     Descargar la APP
                     <span id="btn-descargar" class="material-icons-outlined">

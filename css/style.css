@@ -162,17 +162,14 @@ main-btn (main-btn--a) */
 
 /* bloque con mockup */
 .mockup {
-    order: 3;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 10px;
+    padding: 5%;
+    width: 100%;
 }
 
 .mockup .mockup--floating {
-    align-items: center;
+    /*    align-items: center; */
     animation: float 2s ease infinite;
-    width: 50%;
+    width: 100%;
 }
 
 /* Animación para que flote el mockup */
@@ -219,8 +216,34 @@ main-btn (main-btn--a) */
 
 .new-btn {
     order: 5;
-    padding: 0;
-    margin: 7% 0;
+    padding-left: 20%;
+    margin: 3%;
+}
+
+.col-shadow {
+    position: relative;
+}
+
+.oval-shadow {
+    order: -1;
+    height: 50px;
+    width: 200px;
+    background-color: var(--primary-color);
+    opacity: 30%;
+    border-radius: 100%;
+    margin-top: -22px;
+    filter: blur(10px);
+    margin-left: 25px;
+    margin-right: 25px;
+    animation: anime 2s ease infinite;
+    position: absolute;
+}
+
+@keyframes anime {
+    50% {
+        transform: scale(70%);
+
+    }
 }
 
 
@@ -229,7 +252,7 @@ footer {
     background-color: #fff;
     position: static;
     bottom: 20px;
-    z-index: 10;
+    z-index: 100;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -238,16 +261,15 @@ footer {
 footer .copy {
     display: flex;
     flex-direction: column;
-    padding: 15px;
 }
 
 .copy p {
-    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .icons {
     font-weight: 100;
-    padding: 20px 30px;
+    padding: 5px 30px;
     line-height: 25px;
     text-align: center;
 }
@@ -258,7 +280,7 @@ footer .copy {
 
 .icons p {
     font-size: 1rem;
-    padding: 5px 5px;
+    padding: 3px 5px;
 }
 
 .icons .icons-size svg {
@@ -275,14 +297,24 @@ footer .copy {
     }
 
     .nav {
-        /* grid-template-columns: 1fr 2fr 2fr; */
-        max-width: 840px;
+        max-width: 800px;
         padding: 0px;
     }
-
-    .nav ul li {
+    .nav .nav-ul {
+        justify-content: space-between;
+        margin: 0;
         text-align: center;
+    }
 
+    .nav-btn {
+        margin-left: 30px;
+    }
+
+    .nav ul li a {
+        font-size: 13px;
+        color: var(--primary-color);
+        padding: 0.3em;
+        transition: all .5s ease;
     }
 
     .nav--menuList ul li a {
@@ -308,7 +340,7 @@ footer .copy {
     }
 
     .nav .nav-ul {
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: 0;
         text-align: center;
     }
@@ -324,8 +356,17 @@ footer .copy {
         margin-left: 30px;
     }
 
-    .new-btn {
-        margin: 5% 0;
+    .main-text h1 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .main-text .main-description {
+        font-size: 15px;
+    }
+
+    .main .main-features li {
+        font: 1px;
     }
 
     .selected {
@@ -333,26 +374,20 @@ footer .copy {
         text-align: center;
     }
 
-    /* MAIN> */
-
-    .mockup {
-        padding: 0;
-        margin: 0;
+    .main-text .main-features {
+        margin-left: 0;
     }
 
-    .mockup .mockup--floating {
-        width: 70%;
-        margin: 0;
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
 
     /* FOOTER */
     footer {
         display: flex;
-    }
-
-    .copy p {
-        font-size: 0.7rem;
     }
 
     .icons p {
@@ -363,6 +398,21 @@ footer .copy {
         width: 30px;
         height: 30px;
     }
+
+    .main-text {
+        padding: 10%;
+    }
+
+    .nav {
+        grid-template-columns: 1fr 2fr;
+        width: 601px;
+        padding: 10px;
+        align-items: center;
+    }
+    .nav .nav-btn {
+        display: none;
+    }
+
 }
 
 @media (min-width: 601px) and (max-width: 764px) {
@@ -382,7 +432,7 @@ footer .copy {
     }
 
     .nav .nav-ul {
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: 0;
         text-align: center;
     }
@@ -392,15 +442,6 @@ footer .copy {
         color: var(--primary-color);
         padding: 0.7em;
         transition: all .5s ease;
-    }
-
-    .mockup {
-        margin: 0;
-        align-content: center;
-    }
-
-    .mockup .mockup--floating {
-        width: 100%;
     }
 
     .icons .icons-size svg {
@@ -414,13 +455,17 @@ footer .copy {
     }
 
     .main-text .main-description {
-        margin-top: 30px;
+        margin-top: 10px;
         font-size: 14px;
         font-style: italic;
     }
 
-    .main-text .main-features li {
-        font-size: 14px;
+    .main-text .main-features {
+        margin: 0;
+    }
+  
+    .container .new-btn {
+        padding: 0;
     }
 }
 
@@ -519,15 +564,10 @@ footer .copy {
         margin: 10px auto;
     }
 
-    .new-btn {
-        order: 5;
-        padding: 0;
-        margin: 7% 0;
-    }
-
     .nav-ul {
         padding: 0;
     }
+
 
     /* FOOTER */
     footer {
@@ -560,6 +600,13 @@ footer .copy {
         width: 30px;
         height: 30px;
     }
+
+    .new-btn {
+        order: 5;
+        margin-bottom: 20%;
+        margin-top: 30%;
+    }
+
 }
 
 /* ! ACAAAAAAA */
@@ -576,15 +623,10 @@ footer .copy {
         font-size: 25px;
     }
 
-    .new-btn {
-        order: 5;
-        padding: 0;
-        margin: 7% 0;
-    }
-
     .nav-ul {
         padding: 0;
     }
+
 }
 
 /* fin de página: home.html */
@@ -607,6 +649,13 @@ footer .copy {
 
 
 /* inicio de sobre-la-app.html */
+
+.alinear-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-info {
     margin-top: 30px;
 }
@@ -616,7 +665,9 @@ footer .copy {
     font-size: 30px;
 }
 
+
 .contact-info p {
+    max-width: 500px;
     text-align: center;
 }
 
@@ -651,7 +702,7 @@ footer .copy {
     width: 900px;
     display: flex;
     align-items: center;
-    margin: 60px auto;
+    margin: 40px auto;
 }
 
 .price-table-container .table {
@@ -774,12 +825,14 @@ footer .copy {
 
 /* MEDIA QUERY */
 @media (min-width: 320px) and (max-width: 724px) {
-    .contact-info {
-        margin: 10px;
-    }
-
     .contact-info h2 {
         font-size: 25px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+        max-width: 300px;
+        text-align: center;
     }
 
     .table.recommended {
@@ -805,12 +858,11 @@ footer .copy {
 
     .price-table-container {
         border: none;
-        margin: 40px auto;
+        margin: 20px auto;
         width: auto;
         display: flex;
         flex-direction: column;
     }
-
 
     .price-table-container .table {
         box-sizing: border-box;
@@ -1017,7 +1069,6 @@ footer .copy {
         font-size: 13px;
         width: 350px;
         margin-bottom: 10px;
-        /*     border: 2px solid var(--primary-color); */
     }
 
     .entradas {
