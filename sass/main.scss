@@ -1,5 +1,4 @@
-/* ACLARACIÓN SOBRE BORDES OCULTOS
-        Lo hice así para ponerle rectángulos a las cosas y poder darme cuenta de qué tengo que hacer con cada uno. Antes de la entrega final los quitaré a todos.  */
+@import 'contacto';
 
 * {
     margin: 0;
@@ -51,9 +50,6 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
-.header-fluid {
-    padding: 0;
-}
 
 .nav {
     display: grid;
@@ -143,9 +139,9 @@ body {
 
 
 /* MAIN> 
-mockup (mockup-floating), 
-main-text (h1, p main-description, ul main-features),
-main-btn (main-btn--a) */
+        mockup (mockup-floating), 
+        main-text (h1, p main-description, ul main-features),
+        main-btn (main-btn--a) */
 
 .container {
     display: flex;
@@ -292,6 +288,7 @@ footer .copy {
         max-width: 800px;
         padding: 0px;
     }
+
     .nav .nav-ul {
         justify-content: space-between;
         margin: 0;
@@ -401,6 +398,7 @@ footer .copy {
         padding: 10px;
         align-items: center;
     }
+
     .nav .nav-btn {
         display: none;
     }
@@ -455,7 +453,7 @@ footer .copy {
     .main-text .main-features {
         margin: 0;
     }
-  
+
     .container .new-btn {
         padding: 0;
     }
@@ -471,7 +469,6 @@ footer .copy {
         height: 300px;
         font-size: 15px;
         position: static;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0, 5);
     }
 
     .selector-cerrar .material-icons-outlined {
@@ -609,12 +606,8 @@ footer .copy {
         position: fixed;
         top: 0%;
         z-index: 999;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
     }
 
-    .header-fluid {
-        padding: 0;
-    }
 
     .main-text h1 {
         font-size: 25px;
@@ -799,11 +792,6 @@ footer .copy {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
-
 /* MEDIA QUERY */
 @media (min-width: 320px) and (max-width: 724px) {
     .contact-info h2 {
@@ -908,9 +896,6 @@ footer .copy {
 
 
 
-
-
-
 /* Inicio de página: blog.html */
 
 /* MAIN> */
@@ -955,7 +940,7 @@ footer .copy {
 
 .blog-post .thumbnail img {
     width: 100%;
-    filter: grayscale();
+    filter: grayscale(100%);
 }
 
 .blog-post:nth-child(1) {
@@ -1069,6 +1054,11 @@ footer .copy {
 }
 
 @media (max-width: 600px) {
+    .header {
+        z-index: 2000;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    }
+
     .titular_info {
         display: flex;
         flex-direction: column;
@@ -1111,65 +1101,7 @@ footer .copy {
 /* fin de página: blog.html */
 
 
-
-
-
-
-
-
 /* Inicio de FAQ.html */
-/* MAIN */
-.faq_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-details {
-    background-color: #fff;
-    padding: 0.7rem;
-    border-radius: 6px;
-    margin: 1rem;
-    cursor: pointer;
-    width: 100%;
-    max-width: 1400px;
-}
-
-summary {
-    list-style: none;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-summary::before {
-    content: '+';
-    padding-right: 1rem;
-}
-
-details[open] summary::before {
-    content: '-';
-}
-
-.faq_list ul li {
-    margin-left: 50px;
-    padding: 3px;
-    color: var(--hover-color1);
-}
-
-.faq-line {
-    border: 0;
-    border-bottom: 1px solid var(--primary-color);
-    margin: 5px 18px;
-}
-
-details .faq_text p {
-    margin: 5px 20px;
-    color: var(--hover-color1);
-}
-
 /* MEDIA QUERY */
 @media (max-width: 425px) {
     details {
@@ -1208,9 +1140,3 @@ details .faq_text p {
 }
 
 /* fin de FAQ.html */
-
-
-
-
-
-

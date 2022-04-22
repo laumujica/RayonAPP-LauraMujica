@@ -1,0 +1,129 @@
+/* inicio de página: contacto.html */
+/* MAIN */
+
+form {
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    color: #999;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 0;
+    width: 100%;
+}
+
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;
+
+    &:focus {
+        border-color: var(--highlight-color);
+    }
+}
+
+
+.center-content {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    align-content: center;
+
+    &.h2 {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    &.p {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+.desplegable {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-consulta {
+    border: solid 1px #ccc;
+    max-width: 100%;
+
+    &:hover {
+        border-color: var(--highlight-color);
+    }
+}
+
+#consulta {
+    border: solid 1px #ccc;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.form-item {
+    margin: 10px;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green {
+    color: var(--primary-color);
+    background-color: var(--highlight-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--highlight-color);
+        font-size: large;
+    }
+
+    &:active {
+        background-color: var(--primary-color);
+    }
+}
+
+/* MEDIA QUERY */
+@media (min-width: 320px) and (max-width: 425px) {
+    form {
+        margin: 20px auto;
+        max-width: 300px;
+    }
+
+    .form-item_desplegable {
+        width: 180px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    form {
+        margin: 20px auto;
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 768px) {
+    form {
+        margin: 20px auto;
+        max-width: 680px;
+    }
+}
