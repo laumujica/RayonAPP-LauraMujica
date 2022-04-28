@@ -1,0 +1,17 @@
+//Mapa para cambiar el color del texto seleccionado "INTO THE ZONE", dentro del index.html.
+$nueva-paleta: (
+    highlight-color: var(--highlight-color),
+    blue: blue,
+    red: red,
+    yellow: yellow,
+    green: green,
+    orange: orange,
+    purple: purple,
+
+);
+
+.into-zone {
+    background-color: map-get($map:$nueva-paleta,$key: highlight-color);
+    font-size: 100%;
+    padding: 0 10px;
+}

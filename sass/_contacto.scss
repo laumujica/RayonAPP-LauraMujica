@@ -1,6 +1,4 @@
 /* inicio de página: contacto.html */
-/* MAIN */
-
 form {
     margin: 40px auto;
     max-width: 1000px;
@@ -77,19 +75,12 @@ h1 {
     margin: 10px;
 }
 
-.btn {
-    border-radius: 3px;
-    display: inline-block;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
-
 .btn-green {
     color: var(--primary-color);
     background-color: var(--highlight-color);
+    height: 50px;
     cursor: pointer;
+
 
     &:hover {
         background-color: var(--primary-color);

@@ -1,0 +1,36 @@
+//Mixin aplicado a los botones del index: el del MAIN y el del HEADER
+
+$boton-bg: #f0d200;
+$primary-color: #000000;
+$boton-font: 'Bree Serif', serif;
+$boton-fontSize: 16px;
+
+@mixin btn {
+    background-color: $boton-bg;
+    font-family: $boton-font;
+    font-size: $boton-font;
+    order: 5;
+    margin: 3%;
+    padding: 15px 5px;
+    border-radius: 3px;
+    display: flex;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+//Botón para MAIN
+.btn-descargaMain {
+    @include btn;
+}
+//Botón para el HEADER
+.btn-descarga-2 {
+    @include btn;
+    padding: 10px 3px;
+    .material-icons-outlined {
+        display: none;
+    }
+}

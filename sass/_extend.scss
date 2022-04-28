@@ -1,0 +1,23 @@
+//Extend aplicado a la página BLOG. Según la variable usada se mostrará un color de background distinto.
+.titular__info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--highlight-color);
+    height: 200px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+        h1 {
+        font-size: 80px;
+        color: #fff;
+        }
+        p {
+            width: 450px;
+        }
+}
+.titular__info-bgNone {
+    @extend .titular__info;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+}
