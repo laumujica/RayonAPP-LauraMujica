@@ -270,7 +270,7 @@ body {
   text-decoration: none;
   color: var(--primary-color);
   padding: 1.5rem;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
 }
 
 .nav-ul {
@@ -309,6 +309,7 @@ body {
 .main-text h1 {
   font-size: 2.5em;
   margin-top: 10px;
+  line-height: 50px;
 }
 
 .main-text .main-description {
@@ -388,29 +389,36 @@ body {
 }
 /* FOOTER */
 footer {
-  background-color: #fff;
-  position: static;
-  bottom: 20px;
+  background-color: var(--primary-color);
   z-index: 100;
   display: flex;
+  position: static;
   justify-content: space-evenly;
   align-items: center;
+  color: #fff;
+  /* background-image: linear-gradient(to bottom, #a5a5a500, #000000 0%); */
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer .copy {
-  display: flex;
   flex-direction: column;
 }
 
 .copy p {
   margin-bottom: 0;
+  font-size: 13px;
 }
 
 .icons {
-  font-weight: 100;
   padding: 5px 30px;
-  line-height: 25px;
+  line-height: 10px;
   text-align: center;
+  color: #fff;
+}
+
+.icons a {
+  text-decoration: none;
 }
 
 .icons a:hover path {
@@ -418,13 +426,13 @@ footer .copy {
 }
 
 .icons p {
-  font-size: 1rem;
+  font-size: 13px;
   padding: 3px 5px;
 }
 
 .icons .icons-size svg {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0 0.3125rem;
   list-style: none;
 }
@@ -1059,6 +1067,7 @@ footer .copy {
 }
 
 .blog-post .thumbnail img {
+  filter: grayscale(5);
   width: 100%;
 }
 
