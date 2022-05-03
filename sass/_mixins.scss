@@ -10,7 +10,7 @@ $boton-fontSize: 16px;
     font-family: $boton-font;
     font-size: $boton-font;
     order: 5;
-    margin: 3%;
+    margin: 10px;
     padding: 15px 5px;
     border-radius: 3px;
     display: flex;
@@ -25,6 +25,7 @@ $boton-fontSize: 16px;
 //Botón para MAIN
 .btn-descargaMain {
     @include btn;
+    margin-bottom: 50px;
 }
 //Botón para el HEADER
 .btn-descarga-2 {
