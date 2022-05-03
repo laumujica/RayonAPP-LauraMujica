@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* inicio de página: contacto.html */
+/* HEADER MOBILE */
 form {
   margin: 40px auto;
   max-width: 1000px;
@@ -312,7 +313,7 @@ body {
 }
 
 .main-text h1 {
-  font-size: 2.5em;
+  font-size: 40px;
   margin-top: 10px;
   line-height: 60px;
 }
@@ -407,6 +408,11 @@ body {
     transform: scale(70%);
   }
 }
+/* BTN */
+#btn-web .btn-descargaMain {
+  display: visible;
+}
+
 /* FOOTER */
 footer {
   background-color: var(--primary-color);
@@ -709,7 +715,6 @@ footer .copy {
     display: flex;
     justify-content: center;
     margin-top: 15%;
-    margin-bottom: 5%;
   }
 
   .main-text {
@@ -771,13 +776,22 @@ footer .copy {
 }
 /* ! ACAAAAAAA */
 @media (min-width: 320px) {
-  /* HEADER MAIN */
+  /* HEADER WEB */
   #navbar-web .header {
     display: none;
   }
 
-  .main-text h1 {
-    font-size: 25px;
+  #btn-web .btn-descargaMain {
+    display: visible;
+  }
+
+  #btn-web {
+    display: none;
+  }
+
+  .main-text .index {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .nav-ul {
@@ -787,8 +801,6 @@ footer .copy {
   .container.boton {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
-    margin-bottom: 5%;
   }
 
   /* HEADER MOBILE */
@@ -1232,7 +1244,6 @@ footer .copy {
     font-size: 13px;
     width: 200px;
     margin-bottom: 10px;
-    /*     border: 2px solid var(--primary-color); */
   }
 
   .entradas {
@@ -1312,99 +1323,4 @@ footer .copy {
     width: 1300px;
   }
 }
-/* fin de FAQ.html */
-/* Formulario contacto */
-form {
-  margin: 40px auto;
-  max-width: 1000px;
-  background-color: #fff;
-  padding: 20px;
-  color: #999;
-  border-radius: 5px;
-  font-size: 12.8px;
-}
-
-input,
-textarea {
-  outline: none;
-  border: 0;
-  width: 100%;
-}
-
-.field {
-  border: solid 1px #ccc;
-  padding: 10px;
-}
-.field:focus {
-  border-color: var(--highlight-color);
-}
-
-.center-content {
-  text-align: center;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  text-align: center;
-  align-content: center;
-}
-.contact-info.h2 {
-  font-size: 30px;
-  align-items: center;
-}
-.contact-info.p {
-  max-width: 500px;
-  text-align: center;
-}
-
-.desplegable {
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.text-consulta {
-  border: solid 1px #ccc;
-  max-width: 100%;
-}
-.text-consulta:hover {
-  border-color: var(--highlight-color);
-}
-
-#consulta {
-  border: solid 1px #ccc;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.form-item {
-  margin: 10px;
-}
-
-/* MEDIA QUERY */
-@media (min-width: 320px) and (max-width: 425px) {
-  form {
-    margin: 20px auto;
-    max-width: 300px;
-  }
-
-  .form-item_desplegable {
-    width: 180px;
-  }
-}
-@media (min-width: 426px) and (max-width: 767px) {
-  form {
-    margin: 20px auto;
-    max-width: 420px;
-  }
-}
-@media (min-width: 768px) {
-  form {
-    margin: 20px auto;
-    max-width: 680px;
-  }
-}/*# sourceMappingURL=main.css.map */
+/* fin de FAQ.html *//*# sourceMappingURL=main.css.map */
