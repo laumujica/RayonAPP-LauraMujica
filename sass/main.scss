@@ -28,7 +28,7 @@ a:visited {
 }
 
 body {
-    background-image: linear-gradient(135deg, #c2c2c273, #6b6b6b);
+    background-image: linear-gradient(135deg, #90909073, #6b6b6b);
     background-repeat: no-repeat;
 }
 
@@ -43,7 +43,6 @@ body {
     position: sticky;
     top: 0%;
     z-index: 999;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 .nav {
@@ -95,7 +94,10 @@ body {
     padding: 8px;
     background-color: var(--primary-color);
     border-radius: 0.5em;
-    ;
+}
+
+.selected a:any-link {
+    color: var(--highlight-color);
 }
 
 .selected a:visited {
@@ -126,7 +128,6 @@ body {
     font-size: 40px;
     margin-top: 10px;
     line-height: 60px;
-    
 }
 
 .main-text .main-description {
@@ -165,7 +166,7 @@ body {
 
 /* Columna derecha: MOCKUP (flotante + sombra) */
 .mockup {
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 5%;
     width: 100%;
 }
@@ -210,7 +211,7 @@ body {
 }
 
 /* BTN */
-#btn-web .btn-descargaMain{
+#btn-web .btn-descargaMain {
     display: visible;
 }
 
@@ -264,10 +265,6 @@ footer .copy {
     list-style: none;
 }
 
-
-
-
-
 /* * MEDIA QUERY * */
 @media (min-width: 1440px) {
     #navabar-web .nav {
@@ -318,6 +315,7 @@ footer .copy {
 
 }
 
+/* M765 */
 @media (min-width: 765px) and (max-width: 1024px) {
 
     /* HEADER */
@@ -354,22 +352,21 @@ footer .copy {
         margin-left: 30px;
     }
 
+    /* MAIN */
     .main-text h1 {
         font-size: 30px;
         line-height: 44px;
     }
 
     .main-text .main-description {
+        margin: 20px;
         font-size: 15px;
+        padding: 0px;
     }
 
     .selected {
         padding: 3px;
         text-align: center;
-    }
-
-    .main-text .main-features {
-        margin-left: 0;
     }
 
     .main {
@@ -378,11 +375,57 @@ footer .copy {
         align-items: center;
     }
 
+    .main-text {
+        padding: 5%;
+    }
+
+    .main-text .main-features {
+        margin-left: 0;
+    }
+
+    .main-text .main-features {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .main-features ul {
+        list-style: none;
+        padding-left: 1px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-text .main-features li {
+
+        font-size: 13px;
+        justify-items: center;
+    }
+
+
+
+    /* BOTÓN */
     .btn-descarga-2 {
         display: none;
     }
 
+    /* HEADER MOBILE */
     #navbar-mobile .navbar {
+        display: none;
+    }
+
+    .nav {
+        grid-template-columns: 1fr 2fr;
+        width: 601px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .nav .nav-btn {
         display: none;
     }
 
@@ -401,23 +444,9 @@ footer .copy {
         height: 30px;
     }
 
-    .main-text {
-        padding: 10%;
-    }
-
-    .nav {
-        grid-template-columns: 1fr 2fr;
-        width: 601px;
-        padding: 10px;
-        align-items: center;
-    }
-
-    .nav .nav-btn {
-        display: none;
-    }
-
 }
 
+/* M601 */
 @media (min-width: 601px) and (max-width: 764px) {
 
 
@@ -483,6 +512,7 @@ footer .copy {
 
 }
 
+/* M600 */
 @media (max-width: 600px) {
 
     /* HEADER */
@@ -599,7 +629,7 @@ footer .copy {
 
 }
 
-/* ! ACAAAAAAA */
+/* ! gitAAAAA */
 @media (min-width: 320px) {
 
     /* HEADER WEB */
@@ -607,7 +637,7 @@ footer .copy {
         display: none;
     }
 
-    #btn-web .btn-descargaMain{
+    #btn-web .btn-descargaMain {
         display: visible;
     }
 
@@ -615,9 +645,10 @@ footer .copy {
         display: none;
     }
 
-    .main-text .index {
-        font-size: 20px;
-        line-height: 25px;
+    /* main */
+    .main-text .index-h1 {
+        font-size: 30px;
+        line-height: 40px;
     }
 
     .nav-ul {
@@ -629,8 +660,11 @@ footer .copy {
         justify-content: center;
     }
 
-
-
+    .mockup {
+        margin-top: 10px;
+        padding: 5%;
+        width: 100%;
+    }
 
     /* HEADER MOBILE */
     a {
@@ -652,7 +686,6 @@ footer .copy {
     .menu-bar-size {
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
     }
-
 
 }
 
