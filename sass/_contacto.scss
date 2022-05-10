@@ -96,18 +96,19 @@ h1 {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (max-width: 375px) {
     form {
         margin: 20px auto;
-        max-width: 300px;
+        width: 300px;
     }
-
-    .form-item_desplegable {
-        width: 180px;
+}
+@media (min-width: 376px) and (max-width: 544px) {
+    form {
+        width: 370px;
     }
 }
 
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 545px) and (max-width: 767px) {
     form {
         margin: 20px auto;
         max-width: 420px;

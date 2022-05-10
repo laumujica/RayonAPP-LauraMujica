@@ -88,17 +88,18 @@ h1 {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 320px) and (max-width: 425px) {
+@media (max-width: 375px) {
   form {
     margin: 20px auto;
-    max-width: 300px;
-  }
-
-  .form-item_desplegable {
-    width: 180px;
+    width: 300px;
   }
 }
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 376px) and (max-width: 544px) {
+  form {
+    width: 370px;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
   form {
     margin: 20px auto;
     max-width: 420px;
@@ -176,7 +177,6 @@ $primary-color: #000000;
 $secondary-color: #212121;
 $hover-color: #6B6B66;
 $highlight-color: #f0d200;
-$red: red;
  */
 /* No me tomó las variables con el signo $, intenté mil veces pero no me salió */
 /* THEME COLOR */
@@ -236,7 +236,6 @@ body {
   position: sticky;
   top: 0%;
   z-index: 999;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 .nav {
@@ -288,6 +287,18 @@ body {
   padding: 8px;
   background-color: var(--primary-color);
   border-radius: 0.5em;
+}
+
+.selected a:-webkit-any-link {
+  color: var(--highlight-color);
+}
+
+.selected a:-moz-any-link {
+  color: var(--highlight-color);
+}
+
+.selected a:any-link {
+  color: var(--highlight-color);
 }
 
 .selected a:visited {
@@ -354,7 +365,7 @@ body {
 
 /* Columna derecha: MOCKUP (flotante + sombra) */
 .mockup {
-  margin-top: 20px;
+  margin-top: 70px;
   padding: 5%;
   width: 100%;
 }
@@ -508,6 +519,7 @@ footer .copy {
     display: none;
   }
 }
+/* M765 */
 @media (min-width: 765px) and (max-width: 1024px) {
   /* HEADER */
   .header {
@@ -543,22 +555,21 @@ footer .copy {
     margin-left: 30px;
   }
 
+  /* MAIN */
   .main-text h1 {
     font-size: 30px;
     line-height: 44px;
   }
 
   .main-text .main-description {
+    margin: 20px;
     font-size: 15px;
+    padding: 0px;
   }
 
   .selected {
     padding: 3px;
     text-align: center;
-  }
-
-  .main-text .main-features {
-    margin-left: 0;
   }
 
   .main {
@@ -567,11 +578,54 @@ footer .copy {
     align-items: center;
   }
 
+  .main-text {
+    padding: 5%;
+  }
+
+  .main-text .main-features {
+    margin-left: 0;
+  }
+
+  .main-text .main-features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .main-features ul {
+    list-style: none;
+    padding-left: 1px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-text .main-features li {
+    font-size: 13px;
+    justify-items: center;
+  }
+
+  /* BOTÓN */
   .btn-descarga-2 {
     display: none;
   }
 
+  /* HEADER MOBILE */
   #navbar-mobile .navbar {
+    display: none;
+  }
+
+  .nav {
+    grid-template-columns: 1fr 2fr;
+    width: 601px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .nav .nav-btn {
     display: none;
   }
 
@@ -588,22 +642,8 @@ footer .copy {
     width: 30px;
     height: 30px;
   }
-
-  .main-text {
-    padding: 10%;
-  }
-
-  .nav {
-    grid-template-columns: 1fr 2fr;
-    width: 601px;
-    padding: 10px;
-    align-items: center;
-  }
-
-  .nav .nav-btn {
-    display: none;
-  }
 }
+/* M601 */
 @media (min-width: 601px) and (max-width: 764px) {
   .nav {
     grid-template-columns: 1fr 2fr;
@@ -665,6 +705,7 @@ footer .copy {
     display: none;
   }
 }
+/* M600 */
 @media (max-width: 600px) {
   /* HEADER */
   /* HEADER MOBILE */
@@ -774,7 +815,7 @@ footer .copy {
     height: 30px;
   }
 }
-/* ! ACAAAAAAA */
+/* ! gitAAAAA */
 @media (min-width: 320px) {
   /* HEADER WEB */
   #navbar-web .header {
@@ -789,9 +830,10 @@ footer .copy {
     display: none;
   }
 
-  .main-text .index {
-    font-size: 20px;
-    line-height: 25px;
+  /* main */
+  .main-text .index-h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .nav-ul {
@@ -801,6 +843,12 @@ footer .copy {
   .container.boton {
     display: flex;
     justify-content: center;
+  }
+
+  .mockup {
+    margin-top: 10px;
+    padding: 5%;
+    width: 100%;
   }
 
   /* HEADER MOBILE */
