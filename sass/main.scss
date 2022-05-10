@@ -43,6 +43,7 @@ body {
     position: sticky;
     top: 0%;
     z-index: 999;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 .nav {
@@ -132,7 +133,7 @@ body {
 
 .main-text .main-description {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -162,6 +163,7 @@ body {
 
 .main .main-features li span.material-symbols-outlined {
     color: #f8e23e;
+    padding-right: 5px;
 }
 
 /* Columna derecha: MOCKUP (flotante + sombra) */
@@ -211,8 +213,8 @@ body {
 }
 
 /* BTN */
-#btn-web .btn-descargaMain {
-    display: visible;
+#btn-web  {
+    display: none;
 }
 
 
@@ -221,12 +223,11 @@ footer {
     background-color: var(--primary-color);
     z-index: 100;
     display: flex;
-    position: static;
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
     height: 120px;
-    bottom: 0;
+    position: relative;
 }
 
 footer .copy {
@@ -243,6 +244,10 @@ footer .copy {
     line-height: 10px;
     text-align: center;
     color: #fff;
+}
+
+.icons-size #icons-color {
+    fill: #fff;
 }
 
 .icons a {
@@ -263,6 +268,17 @@ footer .copy {
     height: 2rem;
     margin: 0 0.3125rem;
     list-style: none;
+    fill: #fff;
+}
+
+.favicon-lau img {
+    align-items: center;
+    width: 40%;
+    filter: brightness(100);
+}
+
+.favicon-lau img:hover {
+    filter: none;
 }
 
 /* * MEDIA QUERY * */
@@ -354,7 +370,7 @@ footer .copy {
 
     /* MAIN */
     .main-text h1 {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 44px;
     }
 
@@ -532,13 +548,12 @@ footer .copy {
     }
 
     .logo--mobile img {
-        width: 130px;
+        width: 150px;
     }
 
     .navbar .nav-item a {
         margin-top: 10px;
     }
-
 
 
     /* MAIN> */
@@ -582,8 +597,8 @@ footer .copy {
         display: none;
     }
 
-    .main-text h1 {
-        font-size: 2em;
+    .main-text .index-h1 {
+        font-size: 32px;
         font-weight: 900;
         line-height: 40px;
     }
@@ -591,7 +606,6 @@ footer .copy {
     .nav-ul {
         padding: 0;
     }
-
 
     /* FOOTER */
     footer {
@@ -629,8 +643,8 @@ footer .copy {
 
 }
 
-/* ! gitAAAAA */
-@media (min-width: 320px) {
+/* ! A320 */
+@media (min-width: 320px) and (max-width: 599px) {
 
     /* HEADER WEB */
     #navbar-web .header {
@@ -647,7 +661,7 @@ footer .copy {
 
     /* main */
     .main-text .index-h1 {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 40px;
     }
 
@@ -676,7 +690,7 @@ footer .copy {
     }
 
     .logo--mobile img {
-        width: 130px;
+        width: 150px;
     }
 
     .navbar .nav-item a {
@@ -685,6 +699,18 @@ footer .copy {
 
     .menu-bar-size {
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    .favicon-lau a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .favicon-lau img {
+        width: 25%;
     }
 
 }
@@ -1105,23 +1131,14 @@ footer .copy {
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 425px) and (max-width: 600px) {
     .header {
         height: 335px;
     }
 
-    .titular__info {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--highlight-color);
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        overflow: visible;
-    }
 
     .titular__info h1 {
-        font-size: 30px;
+        font-size: 50px;
         color: #fff;
     }
 
@@ -1141,6 +1158,18 @@ footer .copy {
         height: auto;
     }
 
+    .blog-post {
+        width: 400px;
+    }
+
+    .blog-post .thumbnail img {
+        filter: grayscale(0);
+    }
+
+    .blog-post .blog-link {
+        color: var(--highlight-color);
+    }
+
     .blog-post:nth-child(1) {
         grid-column: 1/1;
         grid-row: 1/1;
@@ -1156,7 +1185,13 @@ footer .copy {
     }
 }
 
-@media (min-width: 320px) and (max-width: 599px) {
+@media (min-width: 320px) and (max-width: 424px) {
+    .entradas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .titular__info {
         display: flex;
         align-items: center;
@@ -1172,6 +1207,18 @@ footer .copy {
         font-size: 13px;
         width: 250px;
         margin-bottom: 10px;
+    }
+
+    .blog-post {
+        width: 280px;
+    }
+
+    .blog-post .thumbnail img {
+        filter: grayscale(0);
+    }
+
+    .blog-post .blog-link {
+        color: var(--highlight-color);
     }
 }
 
