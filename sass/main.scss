@@ -273,7 +273,7 @@ footer .copy {
 
 .favicon-lau img {
     align-items: center;
-    width: 40%;
+    width: 30%;
     filter: brightness(100);
 }
 
@@ -1062,7 +1062,6 @@ footer .copy {
     background-color: var(--highlight-color);
 }
 
-
 .container .item-hover .page-link:hover {
     background-color: var(--primary-color);
     color: var(--highlight-color);
@@ -1149,13 +1148,12 @@ footer .copy {
     }
 
     .entradas {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
         justify-content: center;
-        align-content: center;
-        height: auto;
+        align-items: center;
+        width: 100%;
     }
 
     .blog-post {
@@ -1168,11 +1166,6 @@ footer .copy {
 
     .blog-post .blog-link {
         color: var(--highlight-color);
-    }
-
-    .blog-post:nth-child(1) {
-        grid-column: 1/1;
-        grid-row: 1/1;
     }
 
     .btn-descarga-2 {

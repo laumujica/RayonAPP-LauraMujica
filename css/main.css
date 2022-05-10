@@ -126,7 +126,13 @@ h1 {
   width: 200px;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
   margin-bottom: 50px;
+}
+
+.btn-descargaMain:hover {
+  background-color: #000000;
+  color: #f0d200;
 }
 
 .btn-descarga-2 {
@@ -144,10 +150,15 @@ h1 {
   width: 200px;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
   padding: 10px 3px;
 }
 .btn-descarga-2 .material-icons-outlined {
   display: none;
+}
+
+.btn-descarga-2:hover {
+  width: 90%;
 }
 
 .titular__info, .titular__info-bgNone {
@@ -481,7 +492,7 @@ footer .copy {
 
 .favicon-lau img {
   align-items: center;
-  width: 40%;
+  width: 30%;
   filter: brightness(100);
 }
 
@@ -1313,13 +1324,12 @@ footer .copy {
   }
 
   .entradas {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     justify-content: center;
-    align-content: center;
-    height: auto;
+    align-items: center;
+    width: 100%;
   }
 
   .blog-post {
@@ -1332,11 +1342,6 @@ footer .copy {
 
   .blog-post .blog-link {
     color: var(--highlight-color);
-  }
-
-  .blog-post:nth-child(1) {
-    grid-column: 1/1;
-    grid-row: 1/1;
   }
 
   .btn-descarga-2 {
