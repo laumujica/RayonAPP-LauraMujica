@@ -226,7 +226,6 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
-    height: 120px;
     position: relative;
 }
 
@@ -611,6 +610,7 @@ footer .copy {
     footer {
         display: flex;
         flex-direction: column;
+        height: 800px;
     }
 
     footer .copy {
@@ -702,6 +702,10 @@ footer .copy {
     }
 
     /* Footer */
+    footer {
+        height: 800px;
+    }
+    
     .favicon-lau a {
         display: flex;
         align-items: center;
@@ -1173,7 +1177,7 @@ footer .copy {
     }
 
     footer {
-        height: fit-content;
+        height: 800px;
         font-size: 13px;
     }
 }
