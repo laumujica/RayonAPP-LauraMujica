@@ -812,7 +812,7 @@ footer .copy {
   footer {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 300px;
   }
 
   footer .copy {
@@ -1354,7 +1354,6 @@ footer .copy {
   }
 
   footer {
-    height: 800px;
     font-size: 13px;
   }
 }
