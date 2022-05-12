@@ -20,7 +20,6 @@ $boton-fontSize: 16px;
     width: 200px;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
 }
 
 //Botón para MAIN
@@ -28,22 +27,11 @@ $boton-fontSize: 16px;
     @include btn;
     margin-bottom: 50px;
 }
-
-.btn-descargaMain:hover {
-    background-color: $primary-color;
-    color: $boton-bg;
-}
-
 //Botón para el HEADER
 .btn-descarga-2 {
     @include btn;
     padding: 10px 3px;
-
     .material-icons-outlined {
         display: none;
     }
-}
-
-.btn-descarga-2:hover {
-    width: 90%;
 }
