@@ -86,14 +86,14 @@
     </div>
 
     <form action="https://formsubmit.co/997710fb7e5c4c822fd64eb57d293b85" method="POST">
-        <p class="form-item">Nombre</p>
-        <input type="text" class="field" required> <br>
+        <label for="nombre" class="form-item">Nombre</label>
+        <input type="text" class="field" name="name" required> <br>
 
-        <p class="form-item">Correo electrónico</p>
-        <input type="text" class="field" required> <br>
+        <label class="form-item">Correo electrónico</label>
+        <input type="text" class="field" name="email" required> <br>
 
         <div class="desplegable">
-            <p class="form-item">Tipo de consulta</p>
+            <label class="form-item">Tipo de consulta</label>
             <select name="tipo de consulta" id="consulta" required class="form-item_desplegable">
                 <option value="0">Sobre la APP</option>
                 <option value="0">Sobre la versión PRO</option>
@@ -104,17 +104,17 @@
         </div>
 
 
-        <p class="form-item">Asunto</p>
-        <input type="text" class="field" required>
+        <label class="form-item">Asunto</label>
+        <input type="text" class="field" name="asunto" required>
 
 
-        <p class="form-item">Consulta:</p>
+        <label class="form-item">Consulta:</label>
         <div class="text-consulta">
             <textarea name="multi" cols="15" rows="10" required></textarea>
         </div>
         <br>
 
-        <p class="center-content"><input type="submit" class="btn btn-green" value="Enviar datos"></p>
+        <label class="center-content"><input type="submit" class="btn btn-green" value="Enviar datos"></>
     </form>
 
     <!-- FOOTER -->
