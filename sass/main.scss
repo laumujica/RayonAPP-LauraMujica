@@ -888,6 +888,12 @@ footer .copy {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.center-content {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 320px) and (max-width: 724px) {
     .contact-info h2 {
