@@ -702,6 +702,10 @@ footer .copy {
     }
 
     /* Footer */
+    footer {
+        height: 280px;
+    }
+
     .favicon-lau a {
         display: flex;
         align-items: center;
@@ -1264,3 +1268,17 @@ footer .copy {
 }
 
 /* fin de FAQ.html */
+
+/* Inicio de contacto_ok.html */
+.spoty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    margin: 0 250px 0 250px;
+    & p {
+        line-height: 50px;
+    }
+}
+
