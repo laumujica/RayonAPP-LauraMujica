@@ -22,6 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <!-- Google Material Icons incrustado -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Jueguito -->
+    <link rel="stylesheet" href="./blockrain.css">
+        <!-- jQuery and Blockrain.js -->
+        <script src="jquery.js"></script>
+        <script src="blockrain.js"></script>
+        <script>
+            $('.game').blockrain();
+        </script>
     <!-- CSS propio -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -78,53 +86,20 @@
 
 
     <!-- MAIN -->
-    <div class="contact-info">
-        <div class="alinear-texto">
-            <h1 class="fw-bolder">¡Contactanos!</h1>
-            <p>Dejanos tus datos y tu consulta, <br> y te responderemos apenas veamos el mensaje.</p>
-        </div>
+
+
+    <div class="titular__info">
+        <h1>¡Listo!</h1>
+        <p>Tu mensaje ha sido enviado correctamente. <br> Te responderemos a la brevedad. <br> <strong>¡Muchas
+                gracias!</strong></p>
     </div>
 
-    <form action="https://formsubmit.co/997710fb7e5c4c822fd64eb57d293b85" method="POST">
-        <!-- Honeypot -->
-        <input type="text" name="_honey" style="display:none">
-        <!-- Captcha -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Success -->
-        <input type="hidden" name="_next" value="https://lauraamujica.github.io/RayonAPP-LauraMujica/contacto_ok.html">
-        <!-- Template -->
-        <input type="hidden" name="_template" value="table">
 
-        <label for="nombre" class="form-item">Nombre</label>
-        <input type="text" class="field" name="Nombre" required> <br>
-
-        <label class="form-item">Correo electrónico</label>
-        <input type="text" class="field" name="Email" required> <br>
-
-        <div class="desplegable">
-            <label class="form-item">Tipo de consulta</label>
-            <select name="Tipo&nbsp;de&nbsp;consulta" id="consulta" required class="form-item_desplegable">
-                <option value="Sobre la app">Sobre la APP</option>
-                <option value="Sobre la versión PRO">Sobre la versión PRO</option>
-                <option value="Problemas técnicos">Problemas técnicos</option>
-                <option value="Reclamos/sugerencias">Reclamos/sugerencias</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </div>
+<!--     <div class="viewport__hidden-contact"></div> -->
+    <!-- Jueguito -->
+    <div class="game"></div>
 
 
-        <label class="form-item">Asunto</label>
-        <input type="text" class="field" name="Asunto" required>
-
-
-        <label class="form-item">Consulta:</label>
-        <div class="text-consulta">
-            <textarea name="Consulta" cols="15" rows="10" required></textarea>
-        </div>
-        <br>
-
-        <label class="center-content"><input type="submit" class="btn btn-green" value="Enviar datos"></label>
-    </form>
 
     <!-- FOOTER -->
     <footer class="footer">
