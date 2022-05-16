@@ -1492,6 +1492,7 @@ footer .copy {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: left;
 }
 
 .coder_code {
