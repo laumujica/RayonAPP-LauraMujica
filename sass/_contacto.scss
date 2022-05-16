@@ -54,6 +54,7 @@ textarea {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .text-consulta {
@@ -67,6 +68,8 @@ textarea {
 
 #consulta {
     border: solid 1px #ccc;
+    width: fit-content;
+    height: 2.5rem;
 }
 
 h1 {

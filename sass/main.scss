@@ -30,6 +30,7 @@ a:visited {
 body {
     background-image: linear-gradient(135deg, #90909073, #6b6b6b);
     background-repeat: no-repeat;
+    min-height: 90vh;
 }
 
 
@@ -1277,8 +1278,109 @@ footer .copy {
     justify-content: center;
     height: 550px;
     margin: 0 250px 0 250px;
-    & p {
+    & .spoty-p {
         line-height: 50px;
+        padding: 10px;
+    }
+    & .spoty-size {
+        width: 700px;
     }
 }
 
+@media (min-width: 320px) and (max-width: 424px) {
+    .spoty {
+        margin: 0;
+        align-items: center;
+        & .spoty-p {
+            margin: 0 10px 0 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+        & .spoty-size {
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 290px;
+        }
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 600px) {
+    .spoty {
+        margin: 0;
+        & .spoty-p {
+            margin: 0 10px 0 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+        & .spoty-size {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 380px;
+        }
+    }
+    
+    .titular__info {
+        height: 160px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .spoty {
+        max-width: 768px;
+        margin: 0 100px 0 100px;
+        & .spoty-p {
+            margin: 0 10px 0 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+        & .spoty-size {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 380px;
+        }
+    }
+    
+    .titular__info {
+        height: 160px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .spoty {
+        display: flex;
+        align-content: center;
+        & .spoty-p {
+            margin: 0 10px 0 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+        & .spoty-size {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 700px;
+        }
+    }
+    
+    .titular__info {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .spoty {
+        display: flex;
+        align-content: center;
+        & .spoty-p {
+            margin: 0 10px 0 10px;
+            line-height: 25px;
+            text-align: center;
+        }
+        & .spoty-size {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 700px;
+        }
+    }
+}
