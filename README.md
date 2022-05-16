@@ -10,10 +10,18 @@ Con respecto al hosting, utilicé Firebase porque me gusta mucho. Lo encuentro s
 
 Además, se me ocurrió hacer una página personal para comenzar a publicitarme, por lo que añadí un ícono en el footer con el link.
 
+
 Links importantes:
-// Repositorio: https://github.com/lauraamujica/RayonAPP-LauraMujica
-// GitHubPages: https://lauraamujica.github.io/RayonAPP-LauraMujica/
-// Firebase hosting: https://rayonapp.web.app/
+
+Repositorio: https://github.com/lauraamujica/RayonAPP-LauraMujica
+
+GitHubPages: https://lauraamujica.github.io/RayonAPP-LauraMujica/
+
+Firebase hosting: https://rayonapp.web.app/
+
+
+Acá dejo una muestra de cómo personalicé Visual Studio Code y lo lindo que quedó.
+![](https://raw.githubusercontent.com/lauraamujica/RayonAPP-LauraMujica/master/VSC.png)
 
 Quisiera concluir contando que fue un excelente curso, que el ambiente fue muy ameno y estoy sumamente contenta de haberme animado a tomar este camino.
 ¡Muchas gracias!
