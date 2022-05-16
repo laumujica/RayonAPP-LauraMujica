@@ -1451,11 +1451,25 @@ footer .copy {
   margin: 0 250px 0 250px;
 }
 .spoty .spoty-p {
-  line-height: 50px;
-  padding: 10px;
+  margin: 0 10px 20px 10px;
+  line-height: 25px;
+  text-align: center;
 }
 .spoty .spoty-size {
   width: 700px;
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coder_code {
+  width: 80%;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
@@ -1491,7 +1505,7 @@ footer .copy {
   }
 
   .titular__info, .titular__info-bgNone {
-    height: 160px;
+    height: auto;
   }
 }
 @media (min-width: 601px) and (max-width: 768px) {

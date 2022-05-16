@@ -214,7 +214,7 @@ body {
 }
 
 /* BTN */
-#btn-web  {
+#btn-web {
     display: none;
 }
 
@@ -713,7 +713,7 @@ footer .copy {
         justify-content: center;
         margin: 10px;
     }
-    
+
     .favicon-lau img {
         width: 25%;
     }
@@ -1278,24 +1278,42 @@ footer .copy {
     justify-content: center;
     height: 550px;
     margin: 0 250px 0 250px;
+
     & .spoty-p {
-        line-height: 50px;
-        padding: 10px;
+        margin: 0 10px 20px 10px;
+        line-height: 25px;
+        text-align: center;
     }
+
     & .spoty-size {
         width: 700px;
+        margin-bottom: 20px;
     }
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coder_code{
+    width: 80%;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
     .spoty {
         margin: 0;
         align-items: center;
+
         & .spoty-p {
             margin: 0 10px 0 10px;
             line-height: 25px;
             text-align: center;
         }
+
         & .spoty-size {
             margin: auto;
             margin-top: 20px;
@@ -1309,20 +1327,22 @@ footer .copy {
 @media (min-width: 425px) and (max-width: 600px) {
     .spoty {
         margin: 0;
+
         & .spoty-p {
             margin: 0 10px 0 10px;
             line-height: 25px;
             text-align: center;
         }
+
         & .spoty-size {
             margin-top: 20px;
             margin-bottom: 10px;
             width: 380px;
         }
     }
-    
+
     .titular__info {
-        height: 160px;
+        height: auto;
     }
 }
 
@@ -1330,18 +1350,20 @@ footer .copy {
     .spoty {
         max-width: 768px;
         margin: 0 100px 0 100px;
+
         & .spoty-p {
             margin: 0 10px 0 10px;
             line-height: 25px;
             text-align: center;
         }
+
         & .spoty-size {
             margin-top: 20px;
             margin-bottom: 10px;
             width: 380px;
         }
     }
-    
+
     .titular__info {
         height: 160px;
     }
@@ -1351,18 +1373,20 @@ footer .copy {
     .spoty {
         display: flex;
         align-content: center;
+
         & .spoty-p {
             margin: 0 10px 0 10px;
             line-height: 25px;
             text-align: center;
         }
+
         & .spoty-size {
             margin-top: 20px;
             margin-bottom: 10px;
             width: 700px;
         }
     }
-    
+
     .titular__info {
         height: 200px;
     }
@@ -1372,11 +1396,13 @@ footer .copy {
     .spoty {
         display: flex;
         align-content: center;
+
         & .spoty-p {
             margin: 0 10px 0 10px;
             line-height: 25px;
             text-align: center;
         }
+
         & .spoty-size {
             margin-top: 20px;
             margin-bottom: 10px;
