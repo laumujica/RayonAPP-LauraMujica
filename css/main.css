@@ -740,7 +740,6 @@ footer .copy {
 }
 /* M600 */
 @media (max-width: 600px) {
-  /* HEADER */
   /* HEADER MOBILE */
   header {
     justify-content: center;
@@ -782,7 +781,7 @@ footer .copy {
 
   .mockup .mockup--floating {
     display: flex;
-    width: 70%;
+    width: 80%;
   }
 
   .container.boton {
@@ -878,6 +877,26 @@ footer .copy {
     justify-content: center;
   }
 
+  /* acaaa */
+  .oval-shadow {
+    z-index: -3;
+    height: 50px;
+    width: 150px;
+    opacity: 30%;
+    margin-top: -30px;
+  }
+
+  @-webkit-keyframes anime {
+    50% {
+      transform: scale(80%);
+    }
+  }
+
+  @keyframes anime {
+    50% {
+      transform: scale(80%);
+    }
+  }
   .mockup {
     margin-top: 10px;
     padding: 5%;
