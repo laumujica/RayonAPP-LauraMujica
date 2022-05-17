@@ -1515,6 +1515,11 @@ footer .copy {
     margin-bottom: 30px;
     width: 290px;
   }
+
+  .btn-coder {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 425px) and (max-width: 600px) {
   .spoty {

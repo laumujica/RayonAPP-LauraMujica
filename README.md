@@ -9,7 +9,7 @@ Todo el sitio web ha sido maquetado a mano. El código fue escrito tecla por tec
 Con respecto al hosting, utilicé Firebase porque me gusta mucho. Lo encuentro simple y ya lo he usado para subir sitios que había realizado en Google Sites. 
 
 Además, se me ocurrió hacer una página personal para comenzar a publicitarme, por lo que añadí un ícono en el footer con el link.
-
+Aclaración: el formulario de contacto funciona.
 
 Links importantes:
 
